@@ -13,10 +13,6 @@ class Impressum extends Component {
       "Werkstr.10a",
       "D-77815 Bühl"
     ];
-    const sources = [
-      "Quellenangaben für Bilder und Icons",
-      "unsplash.com, shutterstock.com, fontawesome.io"
-    ];
     return (
       <div className="row py-3" style={blackBackgroundStyle}>
         <div className="col-xs-12 col-md-4 col-lg-4">
