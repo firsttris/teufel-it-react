@@ -1,0 +1,30 @@
+{
+  "title": "prinzipien",
+  "text": "Wir arbeiten auf Basis von bewährten Konzepten",
+  "cards": [
+    {
+      "title": "tdd",
+      "iconClass": "fa-free-code-camp",
+      "gridClass": "col-xs-12 col-md-6 col-lg-6",
+      "text": "Wir testen schon ab der ersten Zeile"
+    },
+    {
+      "title": "pair programming",
+      "iconClass": "fa-users",
+      "gridClass": "col-xs-12 col-md-6 col-lg-6",
+      "text": "Lösungen im Team sind langfristig nachhaltiger"
+    },
+    {
+      "title": "clean code",
+      "iconClass": "fa-code",
+      "gridClass": "col-xs-12 col-md-6 col-lg-6",
+      "text": "Prinzipien und Praktiken zu mehr Qualität"
+    },
+    {
+      "title": "agile",
+      "iconClass": "fa-refresh",
+      "gridClass": "col-xs-12 col-md-6 col-lg-6",
+      "text": "Wir lösen komplexe Herausforderungen in Iterationen"
+    }
+  ]
+}

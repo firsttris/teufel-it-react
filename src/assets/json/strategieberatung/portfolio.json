@@ -1,0 +1,24 @@
+{
+  "title": "portfolio",
+  "text": "Wir sind zuverlässiger Partner bei",
+  "cards": [
+    {
+      "title": "Analyse",
+      "iconClass": "fa-history",
+      "gridClass": "col-xs-12 col-md-6 col-lg-4",
+      "text": "Bestandsaufnahme und Analyse des IT-Umfelds. Bewertung der aktuellen Strategie. Anwendungen und Prozessen."
+    },
+    {
+      "title": "Optimierung",
+      "iconClass": "fa-cogs",
+      "gridClass": "col-xs-12 col-md-6 col-lg-4",
+      "text": "Erstellung von Konzepten für Neuausrichtung und Optimierung."
+    },
+    {
+      "title": "open-source",
+      "iconClass": "fa-github",
+      "gridClass": "col-xs-12 col-md-6 col-lg-4",
+      "text": "Durch Open-Source Software und Cloudlösungen bieten wir unkonventionelle und moderne Lösungen"
+    }
+  ]
+}
