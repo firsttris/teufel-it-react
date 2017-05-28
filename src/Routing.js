@@ -5,8 +5,11 @@ import {
   Switch
 } from 'react-router-dom'
 import App from './App';
+import Development from './Development'
+import Consulting from './Consulting'
 import Paper from './assets/images/backgrounds/paper.png';
 import LinkItem from './LinkItem'
+import NotFound from './NotFound'
 
 const fixedNavBarStyle = {
   width: '100%',
@@ -54,10 +57,10 @@ class Routing extends Component {
             </ul>
           </div>
           <Switch>
-            <Route exact path="/" component={App} />
-            <Route path="/it-strategieberatung" component={App} />
-            <Route path="/softwareentwicklung" component={App} />
-            <Route component={App} />
+            <Route exact path="/" component={Development} />
+            <Route path="/it-strategieberatung" component={Consulting} />
+            <Route path="/softwareentwicklung"  />
+            <Route component={NotFound} />
           </Switch>
         </div>
       </Router>

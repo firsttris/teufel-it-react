@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import MuchCode from './assets/images/much_code.jpg';
-import CodeColor from './assets/images/code_color.jpg';
 import Paper from './assets/images/backgrounds/paper.png';
 import Lines from './assets/images/backgrounds/lines.png';
 import Header from './Header';
@@ -24,7 +22,7 @@ class App extends Component {
       }}>
         <div className="row">
           <div className="col" style={removePaddingStyle}>
-            <FullImage image={MuchCode}></FullImage>
+            <FullImage image={this.props.image1} height="550px"></FullImage>
           </div>
         </div>
 
@@ -33,36 +31,38 @@ class App extends Component {
         </div>
 
         <div className="row py-3">
-          <SubHeading title="Portfolio" text="Wir sind zuverlässiger Partner bei"></SubHeading>
+          <SubHeading title={this.props.portfolioJson.title} text={this.props.portfolioJson.text}></SubHeading>
         </div>
 
         <div className="row py-3">
-          <FlipCard icon="fa-github" title="software" text="Entwicklung von Nativen-, Web- und Cross-Platform Anwendungen."></FlipCard>
-          <FlipCard icon="fa-mobile" title="mobile" text="Mobile Entwicklung für iOS und Android."></FlipCard>
-          <FlipCard icon="fa-code-fork" title="services" text="Integration und Migration von Business Services."></FlipCard>
-          <FlipCard icon="fa-graduation-cap" title="training" text="Wir teilen unser Wissen, neue Konzepte und Methoden."></FlipCard>
+          {
+            this.props.portfolioJson.cards.map(card => {
+              return <FlipCard class={card.gridClass} icon={card.iconClass} title={card.title} text={card.text}></FlipCard>
+            })
+          }
         </div>
 
         <div className="row">
           <div className="col" style={removePaddingStyle}>
-            <FullImage image={CodeColor}></FullImage>
+            <FullImage image={this.props.image2} height="350px"></FullImage>
           </div>
         </div>
 
         <div className="row py-3" style={blackBackgroundStyle}>
-          <SubHeading title="Prinzipien" text="Wir arbeiten auf Basis von bewährten Konzepten"></SubHeading>
+          <SubHeading title={this.props.principlesJson.title} text={this.props.principlesJson.text}></SubHeading>
         </div>
 
         <div className="row py-3" style={blackBackgroundStyle}>
-          <FadeCard icon="fa-free-code-camp" title="TDD" text="Wir testen schon ab der ersten Zeile"></FadeCard>
-          <FadeCard icon="fa-free-code-camp" title="TDD" text="Wir testen schon ab der ersten Zeile"></FadeCard>
-          <FadeCard icon="fa-free-code-camp" title="TDD" text="Wir testen schon ab der ersten Zeile"></FadeCard>
-          <FadeCard icon="fa-free-code-camp" title="TDD" text="Wir testen schon ab der ersten Zeile"></FadeCard>
+         {
+            this.props.principlesJson.cards.map(card => {
+              return <FadeCard icon={card.iconClass} title={card.title} text={card.text}></FadeCard>
+            })
+          }
         </div>
 
         <div className="row">
           <div className="col" style={removePaddingStyle}>
-            <FullImage image={MuchCode}></FullImage>
+            <FullImage image={this.props.image3} height="350px"></FullImage>
           </div>
         </div>
 

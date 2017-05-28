@@ -48,7 +48,7 @@ class FilpCard extends Component {
     }
     flipStyle.transform = this.state.flipped ? 'rotateY(180deg)' : 'rotateY(0deg)';
     return (
-      <div className="col-xs-12 col-md-6 col-lg-3" style={objectPerspectiveStyle}
+      <div className={this.props.class} style={objectPerspectiveStyle}
         onMouseLeave={this.onMouseLeave.bind(this)}
         onMouseEnter={this.onMouseEnter.bind(this)}
         onClick={this.onClick.bind(this)}>

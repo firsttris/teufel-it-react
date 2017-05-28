@@ -9,7 +9,7 @@ class FullImage extends Component {
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',
       backgroundImage: `url(${this.props.image})`,
-      height: '550px', 
+      height: this.props.height, 
       backgroundSize: 'cover',
       minHeight: '400px'
     }
