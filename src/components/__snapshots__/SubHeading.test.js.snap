@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Display Subheading 1`] = `
+<div
+  className="col"
+>
+  <div
+    className="text-uppercase"
+    style={
+      Object {
+        "fontSize": "30px",
+        "letterSpacing": "10px",
+      }
+    }
+  >
+    Test Title
+  </div>
+  <p>
+    Subheading Test Title
+  </p>
+</div>
+`;

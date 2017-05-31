@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Display Social 1`] = `
+<a
+  aria-hidden="true"
+  className="fa fa-2x fa-github"
+  href="https://github.com/firsttris"
+  rel="noopener noreferrer"
+  style={
+    Object {
+      "color": "#f00",
+      "margin": "10px",
+      "textDecoration": "none",
+    }
+  }
+  target="_blank"
+>
+   
+</a>
+`;

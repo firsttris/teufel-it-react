@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Display Header 1`] = `
+<div
+  style={
+    Object {
+      "position": "absolute",
+      "top": "200px",
+      "width": "100%",
+    }
+  }
+>
+  <div
+    className="p-3"
+    style={
+      Object {
+        "backgroundColor": "#4B4B4B",
+        "display": "inline-block",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "color": "#f00",
+          "fontSize": "35px",
+          "letterSpacing": "8px",
+        }
+      }
+    >
+      [ teufel it ]
+    </div>
+    <div
+      className="pt-3"
+      style={
+        Object {
+          "color": "white",
+          "fontSize": "15px",
+          "letterSpacing": "5px",
+        }
+      }
+    >
+      Software ist unser Handwerk
+    </div>
+  </div>
+</div>
+`;
