@@ -1,5 +1,5 @@
 {
-  "name": "my-react-app",
+  "name": "teufel-it-react",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -10,12 +10,18 @@
     "react-router-dom": "^4.1.1"
   },
   "devDependencies": {
-    "react-scripts": "1.0.5"
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-env": "^1.5.1",
+    "babel-preset-react": "^6.24.1",
+    "react-scripts": "1.0.5",
+    "react-test-renderer": "^15.5.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
+    "jest-update": "react-scripts test --updateSnapshot",
     "eject": "react-scripts eject"
   }
 }

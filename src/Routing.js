@@ -4,12 +4,11 @@ import {
   Route,
   Switch
 } from 'react-router-dom'
-import App from './App';
-import Development from './Development'
-import Consulting from './Consulting'
+import Development from './components/Development'
+import Consulting from './components/Consulting'
 import Paper from './assets/images/backgrounds/paper.png';
-import LinkItem from './LinkItem'
-import NotFound from './NotFound'
+import LinkItem from './components/LinkItem'
+import NotFound from './components/NotFound'
 
 const fixedNavBarStyle = {
   width: '100%',
