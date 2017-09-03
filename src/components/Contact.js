@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import ContactAdress from './ContactAdress'
-import Social from './Social'
-import SubHeading from './SubHeading'
+import ContactAdress from './ContactAdress';
+import Social from './Social';
+import SubHeading from './SubHeading';
 
 export default class Contact extends Component {
 

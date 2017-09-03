@@ -12,7 +12,7 @@ export default class FullImage extends Component {
             height: this.props.height,
             backgroundSize: 'cover',
             minHeight: '400px'
-        }
+        };
 
         return (
             <div className="row">

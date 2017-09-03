@@ -1,32 +1,32 @@
 import React, {Component} from 'react';
-import {FormattedMessage} from 'react-intl'
+import {FormattedMessage} from 'react-intl';
 
 export default class FilpCard extends Component {
     constructor(props) {
         super(props);
         this.state = {
             flipped: false
-        }
+        };
     }
 
     onMouseLeave() {
-        this.setState({flipped: false})
+        this.setState({flipped: false});
     }
 
     onMouseEnter() {
-        this.setState({flipped: true})
+        this.setState({flipped: true});
     }
 
     onClick() {
-        this.setState({flipped: true})
+        this.setState({flipped: true});
     }
 
     render() {
         const verticalCenterStyle = {
             display: 'inline-flex',
             alignItems: 'center'
-        }
-        const colorTransitionStyle = {transition: 'color 2s linear 1s'}
+        };
+        const colorTransitionStyle = {transition: 'color 2s linear 1s'};
         colorTransitionStyle.color = this.state.flipped ? 'white' : '#f00';
         return (
             <div className="py-2 col-xs-12 col-md-6 col-lg-6"

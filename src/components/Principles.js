@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import FadeCards from './FadeCards'
-import SubHeading from './SubHeading'
-import Paper from './../assets/images/backgrounds/paper.png'
+import FadeCards from './FadeCards';
+import SubHeading from './SubHeading';
+import Paper from './../assets/images/backgrounds/paper.png';
 
 const blackBackgroundStyle = {backgroundImage: `url(${Paper})`, color: 'white'};
 

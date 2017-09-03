@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import {
     Link
-} from 'react-router-dom'
-import Unicorn from './../assets/images/NotFound/unicorn-small.png'
-import Lines from './../assets/images/backgrounds/lines.png'
-import {FormattedMessage} from 'react-intl'
+} from 'react-router-dom';
+import Unicorn from './../../assets/images/NotFound/unicorn-small.png';
+import Lines from './../../assets/images/backgrounds/lines.png';
+import {FormattedMessage} from 'react-intl';
 
 export default class NotFound extends Component {
     render() {

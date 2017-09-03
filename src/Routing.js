@@ -3,12 +3,12 @@ import {
     HashRouter,
     Route,
     Switch
-} from 'react-router-dom'
-import Development from './components/Development'
-import Consulting from './components/Consulting'
+} from 'react-router-dom';
+import Development from './components/Development';
+import Consulting from './components/Consulting';
 import Paper from './assets/images/backgrounds/paper.png';
-import LinkItem from './components/LinkItem'
-import NotFound from './components/NotFound'
+import LinkItem from './components/LinkItem';
+import NotFound from './components/error/NotFound';
 
 const fixedNavBarStyle = {
     width: '100%',
@@ -31,7 +31,7 @@ class Routing extends Component {
         super();
         this.state = {
             linkitem: 0
-        }
+        };
     }
 
     onClick(index, e) {

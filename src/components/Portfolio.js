@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import FlipCards from './FlipCards'
-import SubHeading from './SubHeading'
+import FlipCards from './FlipCards';
+import SubHeading from './SubHeading';
 
 export default class Portfolio extends Component {
     render() {

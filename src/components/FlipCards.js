@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import FlipCard from './FlipCard'
+import FlipCard from './FlipCard';
 
 export default class FlipCards extends Component {
   render() {
@@ -8,7 +8,7 @@ export default class FlipCards extends Component {
             {
                 this.props.cards.map((card, index) => {
                     return <FlipCard key={index} class={card.gridClass} icon={card.iconClass} title={card.title}
-                                     text={card.text}/>
+                                     text={card.text}/>;
                 })
             }
         </div>

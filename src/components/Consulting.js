@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Parallax from './Parallax';
 import Meeting from './../assets/images/meeting.jpg';
 import Server from './../assets/images/server.jpg';
-import consulting from '../assets/pages/consulting.json'
+import consulting from '../assets/pages/consulting.json';
 import {Helmet} from "react-helmet";
 
 export default class Consulting extends Component {

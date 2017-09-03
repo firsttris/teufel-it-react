@@ -1,5 +1,5 @@
-import React, {Component} from 'react'
-import {FormattedMessage} from 'react-intl'
+import React, {Component} from 'react';
+import {FormattedMessage} from 'react-intl';
 
 const cardStyle = {
     position: 'absolute',
@@ -16,23 +16,23 @@ const borderStyle = {
     display: 'flex',
     alignItems: 'center'
 };
-const objectPerspectiveStyle = {perspective: '800px', 'height': '250px'}
-const iconFontStyle = {fontSize: '10em', color: '#f00'}
+const objectPerspectiveStyle = {perspective: '800px', 'height': '250px'};
+const iconFontStyle = {fontSize: '10em', color: '#f00'};
 
 export default class FilpCard extends Component {
     constructor() {
         super();
         this.state = {
             flipped: false
-        }
+        };
     }
 
     onMouseLeave() {
-        this.setState({flipped: false})
+        this.setState({flipped: false});
     }
 
     onMouseEnter() {
-        this.setState({flipped: true})
+        this.setState({flipped: true});
     }
 
     onClick() {
@@ -46,7 +46,7 @@ export default class FilpCard extends Component {
             transition: 'transform 1s linear',
             backfaceVisibility: 'hidden',
             transform: 'rotateY(0deg)'
-        }
+        };
         flipStyle.transform = this.state.flipped ? 'rotateY(180deg)' : 'rotateY(0deg)';
         return (
             <div className={this.props.class} style={objectPerspectiveStyle}

@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Parallax from './Parallax';
 import MuchCode from './../assets/images/much_code.jpg';
 import CodeColor from './../assets/images/code_color.jpg';
-import development from '../assets/pages/development.json'
+import development from '../assets/pages/development.json';
 import {Helmet} from "react-helmet";
 
 export default class Development extends Component {

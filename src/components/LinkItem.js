@@ -1,14 +1,14 @@
 import React, {Component} from 'react';
 import {
     Link
-} from 'react-router-dom'
+} from 'react-router-dom';
 
 export default class LinkItem extends Component {
     constructor() {
         super();
         this.state = {
             hover: false
-        }
+        };
     }
 
     onMouseLeave() {
@@ -26,7 +26,7 @@ export default class LinkItem extends Component {
             textAlign: 'center',
             padding: '14px 16px',
             textDecoration: 'none'
-        }
+        };
         if (this.props.focus) {
             return {...linkStyle, ...{backgroundColor: '#f00'}};
         }
