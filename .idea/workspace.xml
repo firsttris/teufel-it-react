@@ -2,95 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7fb6a927-fd64-47ab-a8c9-cf74776257d5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/static/media/code_color.ff3e0dbc.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/static/media/fontawesome-webfont.674f50d2.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/static/media/fontawesome-webfont.af7ae505.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/static/media/fontawesome-webfont.b06871f2.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/static/media/fontawesome-webfont.fee66e71.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/static/media/lines.1c2d10c6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/static/media/meeting.a9b8b531.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/static/media/much_code.9ec5afa3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/static/media/paper.8700d9ec.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/static/media/server.eee8c593.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/static/media/unicorn-small.ce496933.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/asset-manifest.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/manifest.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/service-worker.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/static/css/main.f3d12248.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/static/css/main.f3d12248.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/static/js/main.ffcc121e.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/static/js/main.ffcc121e.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/static/media/fontawesome-webfont.912ec66d.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/static/media/logo.ee7cd8ed.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/pages/consulting.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/pages/development.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/translations/de-DE.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/translations/en-US.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/ContactAdress.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/FadeCards.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/FlipCards.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Parallax.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Portfolio.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Principles.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.eslintrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.vscode/launch.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/json/consulting/portfolio.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/json/consulting/principles.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/json/development/portfolio.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/json/development/principles.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/App.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/Consulting.test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/Contact.test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/Development.test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/FadeCard.test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/FlipCard.test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/FullImage.test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/Header.test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/Impressum.test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/LinkItem.test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/NotFound.test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/Social.test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/SubHeading.test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/__snapshots__/Consulting.test.js.snap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/__snapshots__/Contact.test.js.snap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/__snapshots__/Development.test.js.snap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/__snapshots__/FadeCard.test.js.snap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/__snapshots__/FlipCard.test.js.snap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/__snapshots__/FullImage.test.js.snap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/__snapshots__/Header.test.js.snap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/__snapshots__/Impressum.test.js.snap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/__snapshots__/LinkItem.test.js.snap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/__snapshots__/NotFound.test.js.snap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/__snapshots__/Social.test.js.snap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/__snapshots__/SubHeading.test.js.snap" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/teufel-it-react.iml" afterPath="$PROJECT_DIR$/.idea/teufe-it-react.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/favicon.ico" afterPath="$PROJECT_DIR$/public/favicon.ico" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.babelrc" afterPath="$PROJECT_DIR$/.babelrc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/asset-manifest.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/manifest.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/service-worker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/static/css/main.f3d12248.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/static/css/main.f3d12248.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/static/js/main.ffcc121e.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/static/js/main.ffcc121e.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/static/media/code_color.ff3e0dbc.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/static/media/fontawesome-webfont.674f50d2.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/static/media/fontawesome-webfont.912ec66d.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/static/media/fontawesome-webfont.af7ae505.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/static/media/fontawesome-webfont.b06871f2.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/static/media/fontawesome-webfont.fee66e71.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/static/media/lines.1c2d10c6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/static/media/logo.ee7cd8ed.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/static/media/meeting.a9b8b531.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/static/media/much_code.9ec5afa3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/static/media/paper.8700d9ec.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/static/media/server.eee8c593.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/static/media/unicorn-small.ce496933.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/manifest.json" afterPath="$PROJECT_DIR$/public/manifest.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Consulting.js" afterPath="$PROJECT_DIR$/src/components/Consulting.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Contact.js" afterPath="$PROJECT_DIR$/src/components/Contact.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Development.js" afterPath="$PROJECT_DIR$/src/components/Development.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/FadeCard.js" afterPath="$PROJECT_DIR$/src/components/FadeCard.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/FlipCard.js" afterPath="$PROJECT_DIR$/src/components/FlipCard.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/FullImage.js" afterPath="$PROJECT_DIR$/src/components/FullImage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Header.js" afterPath="$PROJECT_DIR$/src/components/Header.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Impressum.js" afterPath="$PROJECT_DIR$/src/components/Impressum.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/LinkItem.js" afterPath="$PROJECT_DIR$/src/components/LinkItem.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/NotFound.js" afterPath="$PROJECT_DIR$/src/components/NotFound.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Social.js" afterPath="$PROJECT_DIR$/src/components/Social.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/SubHeading.js" afterPath="$PROJECT_DIR$/src/components/SubHeading.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.css" afterPath="$PROJECT_DIR$/src/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.js" afterPath="$PROJECT_DIR$/src/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/registerServiceWorker.js" afterPath="$PROJECT_DIR$/src/registerServiceWorker.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Routing.js" afterPath="$PROJECT_DIR$/src/Routing.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yarn.lock" afterPath="$PROJECT_DIR$/yarn.lock" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -161,13 +97,25 @@
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="368">
-              <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+              <caret line="19" column="33" lean-forward="true" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Development.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Routing.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Routing.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1081">
+              <caret line="47" column="104" lean-forward="false" selection-start-line="47" selection-start-column="104" selection-end-line="47" selection-end-column="104" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Development.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Development.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="322">
@@ -256,10 +204,11 @@
         <option value="$PROJECT_DIR$/src/components/Principles.js" />
         <option value="$PROJECT_DIR$/src/components/Portfolio.js" />
         <option value="$PROJECT_DIR$/src/components/Parallax.js" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/components/Consulting.js" />
         <option value="$PROJECT_DIR$/src/components/Development.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/Routing.js" />
       </list>
     </option>
   </component>
@@ -319,6 +268,11 @@
             <path>
               <item name="teufe-it-react" type="b2602c69:ProjectViewProjectNode" />
               <item name="teufe-it-react" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="teufe-it-react" type="b2602c69:ProjectViewProjectNode" />
+              <item name="teufe-it-react" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -394,24 +348,32 @@
       <updated>1504449741622</updated>
       <workItem from="1504449742789" duration="12158000" />
       <workItem from="1504464954913" duration="131000" />
-      <workItem from="1504465308399" duration="4889000" />
+      <workItem from="1504465308399" duration="5446000" />
     </task>
+    <task id="LOCAL-00001" summary="update react-prototype">
+      <created>1504470219127</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1504470219128</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17178000" />
+    <option name="totallyTimeSpent" value="17735000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24920969" sideWeight="0.4876033" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24920969" sideWeight="0.4876033" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24920969" sideWeight="0.5123967" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32628062" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32628062" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -447,6 +409,12 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="update react-prototype" />
+    <option name="LAST_COMMIT_MESSAGE" value="update react-prototype" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -714,7 +682,7 @@
         <state relative-caret-position="92">
           <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -771,14 +739,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -809,6 +769,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
           <caret line="14" column="117" lean-forward="false" selection-start-line="14" selection-start-column="117" selection-end-line="14" selection-end-column="117" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="19" column="33" lean-forward="true" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Routing.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1081">
+          <caret line="47" column="104" lean-forward="false" selection-start-line="47" selection-start-column="104" selection-end-line="47" selection-end-column="104" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>

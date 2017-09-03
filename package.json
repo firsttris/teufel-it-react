@@ -1,5 +1,6 @@
 {
   "name": "teufel-it-react",
+  "homepage": "https://firsttris.github.io/teufel-it-react/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -7,6 +8,7 @@
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "bootstrap": "4.0.0-beta",
     "font-awesome": "^4.7.0",
+    "gh-pages": "^1.0.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-helmet": "^5.2.0",
@@ -15,6 +17,8 @@
     "react-scripts": "1.0.13"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
