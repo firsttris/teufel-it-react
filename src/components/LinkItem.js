@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import {
-  Link
+    Link
 } from 'react-router-dom'
 
-class LinkItem extends Component {
+export default class LinkItem extends Component {
     constructor() {
         super();
         this.state = {
@@ -12,11 +12,11 @@ class LinkItem extends Component {
     }
 
     onMouseLeave() {
-        this.setState({ hover: false });
+        this.setState({hover: false});
     }
 
     onMouseEnter() {
-        this.setState({ hover: true });        
+        this.setState({hover: true});
     }
 
     getLinkStyle() {
@@ -27,20 +27,20 @@ class LinkItem extends Component {
             padding: '14px 16px',
             textDecoration: 'none'
         }
-        if(this.props.focus) {
-            return { ...linkStyle, ...{ backgroundColor: '#f00' } };
+        if (this.props.focus) {
+            return {...linkStyle, ...{backgroundColor: '#f00'}};
         }
-        if(this.state.hover) {
-            return { ...linkStyle, ...{ backgroundColor: 'white', color: 'black' } };
+        if (this.state.hover) {
+            return {...linkStyle, ...{backgroundColor: 'white', color: 'black'}};
         }
         return linkStyle;
     }
 
     render() {
         return (
-            <li style={{ float: 'left' }} onMouseLeave={this.onMouseLeave.bind(this)} onMouseEnter={this.onMouseEnter.bind(this)}><Link style={this.getLinkStyle()} to={this.props.path}>{this.props.name}</Link></li>
+            <li style={{float: 'left'}} onMouseLeave={this.onMouseLeave.bind(this)}
+                onMouseEnter={this.onMouseEnter.bind(this)}><Link style={this.getLinkStyle()}
+                                                                  to={this.props.path}>{this.props.name}</Link></li>
         );
     }
 }
-
-export default LinkItem;
