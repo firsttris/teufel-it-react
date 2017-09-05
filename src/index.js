@@ -9,8 +9,8 @@ import de from 'react-intl/locale-data/de';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'font-awesome/css/font-awesome.css';
-const deDE = require('./assets/translations/de-DE.json');
-const enUS = require('./assets/translations/en-US.json');
+import deDE from './assets/translations/de-DE.json';
+import enUS from './assets/translations/en-US.json';
 
 addLocaleData([...en, ...de]);
 

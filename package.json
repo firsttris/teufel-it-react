@@ -6,12 +6,12 @@
   "author": "Tristan Teufel",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/firsttris/teufel-it-react.git"
   },
   "license": "MIT",
-  "main": "",
+  "main": "index.html",
   "scripts": {
-    "test": "jest --coverage",
+    "test": "jest",
     "test:watch": "jest --coverage --watchAll",
     "start": "webpack-dev-server --port 8080 --hot --env.config=dev --colors --open",
     "build": "webpack --env.config=prod --colors",
