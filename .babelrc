@@ -1,15 +1,6 @@
 {
-  "presets": [
-    "env",
-    "react"
-  ],
+  "presets": ["env", "react"],
   "plugins": [
-    "transform-object-rest-spread",
-    [
-      "react-intl",
-      {
-        "messagesDir": "./build/messages/"
-      }
-    ]
+    "transform-object-rest-spread"
   ]
 }

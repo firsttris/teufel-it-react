@@ -5,14 +5,14 @@ import Routing from './Routing';
 import registerServiceWorker from './registerServiceWorker';
 import {addLocaleData, IntlProvider} from 'react-intl';
 import en from 'react-intl/locale-data/en';
-import es from 'react-intl/locale-data/es';
+import de from 'react-intl/locale-data/de';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'font-awesome/css/font-awesome.css';
-import deDE from './assets/translations/de-DE.json';
-import enUS from './assets/translations/en-US.json';
+const deDE = require('./assets/translations/de-DE.json');
+const enUS = require('./assets/translations/en-US.json');
 
-addLocaleData([...en, ...es]);
+addLocaleData([...en, ...de]);
 
 ReactDOM.render(
     <IntlProvider

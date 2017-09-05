@@ -1,14 +1,11 @@
-# See https://help.github.com/ignore-files/ for more about ignoring files.
-.idea/
-
 # dependencies
 node_modules/
 
-# testing
-coverage/
-
 # production
-build/
+builds/
+dist/
+coverage/
+.idea/
 
 # misc
 .DS_Store
@@ -17,6 +14,8 @@ build/
 .env.test.local
 .env.production.local
 
-npm-debug.log*
+*npm-debug.log
+*.DS_Store
 yarn-debug.log*
 yarn-error.log*
+src/components/__snapshots__/
