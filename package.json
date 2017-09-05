@@ -15,6 +15,7 @@
     "test:watch": "jest --coverage --watchAll",
     "start": "webpack-dev-server --port 8080 --hot --env.config=dev --colors --open",
     "build": "webpack --env.config=prod --colors",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
