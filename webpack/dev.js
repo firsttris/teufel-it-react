@@ -25,5 +25,5 @@ base.plugins.push(
     new FriendlyErrorsWebpackPlugin()
 );
 
-base.devtool = "eval";
+base.devtool = "inline-source-map";
 module.exports = base;

@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
 import FadeCards from './FadeCards';
 import SubHeading from './SubHeading';
-import Paper from './../assets/images/backgrounds/paper.png';
+import Paper from './../../public/images/backgrounds/paper.png';
 
 const blackBackgroundStyle = {backgroundImage: `url(${Paper})`, color: 'white'};
 
-export default class Principles extends Component {
+export default class Principle extends Component {
     render() {
         return (
             <div className="row">

@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
-import Lines from './../assets/images/backgrounds/lines.png';
+import Lines from './../../public/images/backgrounds/lines.png';
 import Header from './Header';
 import FullImage from './FullImage';
 import Contact from './Contact';
 import Impressum from './Impressum';
-import Principles from './Principles';
+import Principle from './Principle';
 import Portfolio from './Portfolio';
 
 export default class Parallax extends Component {
@@ -19,7 +19,7 @@ export default class Parallax extends Component {
                 <Header/>
                 <Portfolio json={portfolio}/>
                 <FullImage image={this.props.image2} height="350px"/>
-                <Principles json={principles}/>
+                <Principle json={principles}/>
                 <FullImage image={this.props.image3} height="350px"/>
                 <Contact/>
                 <Impressum/>

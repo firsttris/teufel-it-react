@@ -2,8 +2,8 @@ import React, {Component} from 'react';
 import {
     Link
 } from 'react-router-dom';
-import Unicorn from './../../assets/images/NotFound/unicorn-small.png';
-import Lines from './../../assets/images/backgrounds/lines.png';
+import Unicorn from './../../../public/images/NotFound/unicorn-small.png';
+import Lines from './../../../public/images/backgrounds/lines.png';
 import {FormattedMessage} from 'react-intl';
 
 export default class NotFound extends Component {
@@ -15,7 +15,7 @@ export default class NotFound extends Component {
                 backgroundImage: `url(${Lines})`,
                 position: 'absolute',
                 width: '100%',
-                height: '100%',
+                height: window.innerHeight,
                 paddingTop: '100px'
             }}>
                 <img src={Unicorn} alt="Not Found" style={{marginTop: '50px', marginBottom: '50px', height: '200px'}}/>

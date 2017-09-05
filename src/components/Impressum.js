@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {FormattedMessage} from 'react-intl';
-import Paper from './../assets/images/backgrounds/paper.png';
-import Logo from './../assets/logo.svg';
+import Paper from './../../public/images/backgrounds/paper.png';
+import Logo from './../../public/logo.svg';
 import './impressum.css';
 
 const blackBackgroundStyle = {backgroundImage: `url(${Paper})`, color: 'white'};
