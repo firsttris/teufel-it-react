@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import FadeCards from './FadeCards';
+import FadeCards from './cards/FadeCards';
 import SubHeading from './SubHeading';
 import Paper from './../../public/images/backgrounds/paper.png';
 

@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import Parallax from './../Parallax';
+import OldComputer from './../../../public/images/oldComputer2.jpg';
 import MuchCode from './../../../public/images/much_code.jpg';
-import CodeColor from './../../../public/images/code_color.jpg';
-import development from './../../../public/pages/development.json';
+import DevelopmentJson from './../../../public/pages/development.json';
 import {Helmet} from "react-helmet";
 
 export default class Development extends Component {
@@ -15,7 +15,7 @@ export default class Development extends Component {
                     <meta name="description" content="Teufel IT, Softwareentwicklung, JavaScript, NodeJs, Integration" />
                     <link rel="canonical" href="http://teufel-it.de" />
                 </Helmet>
-                <Parallax image1={MuchCode} image2={CodeColor} image3={MuchCode} json={development}/>
+                <Parallax image1={OldComputer} image2={MuchCode} image3={OldComputer} json={DevelopmentJson}/>
             </div>
         );
     }

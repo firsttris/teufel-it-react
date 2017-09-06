@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import FlipCards from './FlipCards';
+import FlipCards from './cards/FlipCards';
 import SubHeading from './SubHeading';
 
 export default class Portfolio extends Component {
