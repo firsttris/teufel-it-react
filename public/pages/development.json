@@ -23,7 +23,7 @@
       },
       {
         "title": "PORTFOLIO_TRAINING_TITLE",
-        "iconClass": "fa-graduation-cap",
+        "iconClass": "fa-leanpub",
         "gridClass": "col-xs-12 col-md-6 col-lg-3",
         "text": "PORTFOLIO_TRAINING_TEXT"
       }

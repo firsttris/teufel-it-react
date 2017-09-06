@@ -9,6 +9,7 @@ import {TransitionGroup, CSSTransition} from 'react-transition-group';
 import Development from './../pages/Development';
 import Consulting from './../pages/Consulting';
 import NotFound from './../error/NotFound';
+import Github from './../pages/Github'
 import Navigation from './Navigation';
 
 
@@ -25,7 +26,7 @@ export default class Router extends Component {
                                     <Switch key={location.pathname} location={location}>
                                         <Route exact path="/" component={Development}/>
                                         <Route path="/it-strategieberatung" component={Consulting}/>
-                                        <Route path="/softwareentwicklung" component={NotFound}/>
+                                        <Route path="/softwareentwicklung" component={Github}/>
                                         <Route component={NotFound}/>
                                     </Switch>
                             </CSSTransition>
