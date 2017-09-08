@@ -1,29 +1,15 @@
 import React, {Component} from 'react';
 import Paper from './../../../public/images/backgrounds/paper.png';
 import LinkItem from './LinkItem';
-import { withRouter } from 'react-router';
-
-const fixedNavBarStyle = {
-    width: '100%',
-    position: 'fixed',
-    top: '0px',
-    zIndex: '10',
-    borderBottom: '1px solid #f00'
-};
-
-const ulStyle = {
-    listStyleType: 'none',
-    margin: '0',
-    padding: '0',
-    overflow: 'hidden',
-    backgroundImage: `url(${Paper})`
-};
+import './navigation.css';
+import {withRouter} from 'react-router';
 
 class Navigation extends Component {
     constructor() {
         super();
         this.state = {
-            currentPath: ''
+            currentPath: '',
+            hideNav: true
         };
     }
 
@@ -35,24 +21,48 @@ class Navigation extends Component {
         this.setState({currentPath: this.props.history.location.pathname});
     }
 
+    toggleNavigation() {
+        this.setState({hideNav: !this.state.hideNav});
+    }
+
     render() {
         const navItems = [
-            { path: '/', name: 'Entwicklung' },
-            { path: '/it-strategieberatung', name: 'Beratung' },
-            { path: '/softwareentwicklung', name: 'Software'}
+            {path: '/', name: 'Entwicklung'},
+            {path: '/it-strategieberatung', name: 'Beratung'},
+            {path: '/softwareentwicklung', name: 'Software'}
         ];
         return (
-            <div style={fixedNavBarStyle}>
-                <ul style={ulStyle}>
-                    {
-                        navItems.map((item, index) => {
-                            return(
-                                <div key={index} onClick={() => this.onClick()}>
-                                    <LinkItem focus={this.state.currentPath === item.path} path={item.path} name={item.name}/>
-                                </div>
-                            )
-                        })
-                    }
+            <div className="nav-bar">
+                <ul style={{
+                    listStyleType: 'none',
+                    margin: '0',
+                    padding: '0',
+                    overflow: 'hidden',
+                    backgroundImage: `url(${Paper})`,
+                    borderBottom: '1px solid #f00'
+                }}>
+                    <li className="nav-button">
+                        <a className="btn btn-outline-dark pull-right" style={{
+                            margin: '10px',
+                            color: '#f00',
+                            textDecoration: 'none'
+                        }}>
+                            <i className="fa fa-bars" aria-hidden="true" onClick={() => this.toggleNavigation()}/>
+                        </a>
+                        <div className="clearfix"/>
+                    </li>
+                    <div className={this.state.hideNav ? "navigation" : ''}>
+                        {
+                            navItems.map((item, index) => {
+                                return (
+                                    <div key={index} onClick={() => this.onClick()}>
+                                        <LinkItem focus={this.state.currentPath === item.path} path={item.path}
+                                                  name={item.name}/>
+                                    </div>
+                                )
+                            })
+                        }
+                    </div>
                 </ul>
             </div>
         );

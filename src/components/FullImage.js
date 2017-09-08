@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import './fullImage.css'
 
 export default class FullImage extends Component {
     render() {
@@ -17,7 +18,7 @@ export default class FullImage extends Component {
         return (
             <div className="row">
                 <div className="col" style={{padding: 0}}>
-                    <div style={imageStyle}>
+                    <div className="full-image" style={imageStyle}>
                     </div>
                 </div>
             </div>

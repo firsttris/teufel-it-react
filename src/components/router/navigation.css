@@ -1,0 +1,17 @@
+.nav-button {
+    display: none;
+}
+.nav-bar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-Index: 10;
+}
+@media (max-width: 575px) {
+    .navigation {
+        display: none;
+    }
+    .nav-button {
+        display: initial;
+    }
+}

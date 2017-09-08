@@ -1,0 +1,9 @@
+.link-item {
+    float: left;
+}
+
+@media (max-width: 575px) {
+    .link-item {
+        float: none;
+    }
+}

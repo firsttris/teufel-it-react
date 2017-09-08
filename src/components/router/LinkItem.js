@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {
     Link
 } from 'react-router-dom';
+import './linkItem.css'
 
 export default class LinkItem extends Component {
     constructor() {
@@ -38,7 +39,7 @@ export default class LinkItem extends Component {
 
     render() {
         return (
-            <li style={{float: 'left'}} onMouseLeave={this.onMouseLeave.bind(this)}
+            <li className="link-item" onMouseLeave={this.onMouseLeave.bind(this)}
                 onMouseEnter={this.onMouseEnter.bind(this)}><Link style={this.getLinkStyle()}
                                                                   to={this.props.path}>{this.props.name}</Link></li>
         );
