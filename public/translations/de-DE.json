@@ -25,7 +25,6 @@
   "PRINCIPLES_EASY_TEXT": "Reduzierung der Komplexität Ihrer IT-Systeme",
   "PRINCIPLES_BUSINESS_TITLE": "Business",
   "PRINCIPLES_BUSINESS_TEXT": "Konzentration auf Ihr Kerngeschäft",
-
   "PORTFOLIO_SOFTWARE_TITLE": "Software",
   "PORTFOLIO_SOFTWARE_TEXT": "Entwicklung von Nativen-, Web- und Cross-Platform Anwendungen",
   "PORTFOLIO_MOBILE_TITLE": "Mobile",
@@ -36,7 +35,6 @@
   "PORTFOLIO_SERVICES_TEXT": "Integration und Migration von Business Services",
   "PORTFOLIO_TRAINING_TITLE": "training",
   "PORTFOLIO_TRAINING_TEXT": "Wir teilen unser Wissen, neue Konzepte und Methoden",
-
   "PRINCIPLES_TDD_TITLE": "tdd",
   "PRINCIPLES_TDD_TEXT": "Wir testen schon ab der ersten Zeile",
   "PRINCIPLES_PP_TITLE": "Pair Programming",
@@ -45,8 +43,19 @@
   "PRINCIPLES_CC_TEXT": "Prinzipien und Praktiken zu mehr Qualität",
   "PRINCIPLES_AGILE_TITLE": "agile",
   "PRINCIPLES_AIGLE_TEXT": "Wir lösen komplexe Herausforderungen in Iterationen",
-
   "OWNER": "Inhaber",
   "SOURCE_FOR_IMAGES": "Quellen für Medien",
-  "BUILD_WITH": "Build with "
+  "BUILD_WITH": "Build with ",
+  "SOURCE_CODE": "Source Code",
+  "GITHUB_PAGE_LINK": "Deployed on Github ",
+  "GITHUB_SUBTITLE": "on Github",
+  "NAVIGATION_DEVELOPMENT": "Entwicklung",
+  "NAVIGATION_CONSULTING": "Beratung",
+  "NAVIGATION_PROJECTS": "Projekte",
+  "NAVIGATION_SENDTOKODI": "SendToKodi",
+  "SENDTOKODI_DESCRIPTION_LABEL": "Beschreibung",
+  "SENDTOKODI_SCREENSHOTS_LABEL": "Screenshots",
+  "SENDTOKODI_REVIEWS": "Reviews",
+  "SENDTOKODI_SUPPORTED_ADDONS_LABEL": "Unterstützte Addons",
+  "SENDTOKODI_DESCRIPTION": "Mit SendToKodi kannst du direkt aus verschiedenen Apps Links an die Kodi Addons senden. Öffne dazu einfach das Share Menü bei dem entsprechenden Video bzw. Lied und wähle aus den zur Verfügung stehenden Apps SendToKodi aus. Anschließend kannst du den Link dann an Kodi senden."
 }

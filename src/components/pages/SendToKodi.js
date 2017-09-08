@@ -1,5 +1,11 @@
 import React, {Component} from 'react';
 import Lines from './../../../public/images/backgrounds/lines.png';
+import Logo from './../../../public/images/SendToKodi/logo.jpg';
+import SendToKodiScreen1 from './../../../public/images/SendToKodi/3.jpg';
+import SendToKodiScreen2 from './../../../public/images/SendToKodi/4.jpg';
+import Contact from './../Contact';
+import Impressum from './../Impressum';
+import {FormattedMessage} from 'react-intl';
 
 export default class SendToKodi extends Component {
 
@@ -57,9 +63,7 @@ export default class SendToKodi extends Component {
     render() {
         const imgStyle = {borderRadius: '25px', border: '1px solid black'};
         return (
-            <div className="container-fluid" style={{
-                backgroundImage: `url(${Lines})`
-            }}>>
+            <div className="container-fluid" style={{backgroundImage: `url(${Lines})`}}>
                 <div style={{height: '75px'}}>
                 </div>
                 <div className="container">
@@ -67,48 +71,48 @@ export default class SendToKodi extends Component {
                         <div className="col">
                             <h2>SendToKodi</h2>
                             <p><i>von Tristan Teufel</i></p>
-                            <img style={imgStyle} src="./../../../public/images/SendToKodi/logo.jpg"/>
+                            <img style={imgStyle} src={Logo}/>
                         </div>
                     </div>
                     <div className="row mt-4">
                         <div className="col">
-                            <h3>Beschreibung </h3>
-                            <p>Mit "SendToKodi" kannst du direkt aus verschiedenen Apps Links an die Kodi Addons senden.<br/>
-                                Öffne dazu einfach das "Share" Menü bei dem entsprechenden Video bzw. Lied und wähle aus
-                                den zur Verfügung
-                                stehenden Apps "SendToKodi" aus.<br/>
-                                Anschließend kannst du den Link dann an Kodi senden.
-                            </p>
-                            <a href={this.state.app.link} className="btn btn-primary" target="_blank">
-                                <i className="fa fa-apple" aria-hidden="true"/>
-                                &nbsp;Appstore Link</a>
-                        </div>
-                    </div>
+                            <h3><FormattedMessage id="SENDTOKODI_DESCRIPTION_LABEL"/></h3>
+                            <div className="row py-3">
+                                <div className="col-xs-12 col-md-12 col-lg-6">
+                                    <FormattedMessage id="SENDTOKODI_DESCRIPTION"/>
+                                </div>
+                            </div>
 
+                            <a href={this.state.app.link} className="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                                <i className="fa fa-apple" aria-hidden="true"/> Appstore Link</a>
+                        </div>
+                    </div>
                     <div className="row mt-4">
                         <div className="col">
-                            <h5>Unterstützte Addons:</h5>
-                            <ul>
+                            <h5><FormattedMessage id="SENDTOKODI_SUPPORTED_ADDONS_LABEL"/></h5>
+                            <ul className="py-3">
                                 <li>Youtube</li>
                                 <li>Soundcloud</li>
                                 <li>Vimeo</li>
                                 <li>Twitch</li>
                                 <li>Mixcloud</li>
                             </ul>
+                            <h5><FormattedMessage id="SENDTOKODI_SCREENSHOTS_LABEL"/></h5>
                         </div>
                     </div>
-
                     <div className="row">
-                        <div className="col-xs-12 col-md-12 col-lg-6">
-                            <img style={imgStyle} src="./../../../public/images/SendToKodi/3.jpg"/>
+                        <div className="col-xs-12 col-md-12 col-lg-4 py-4">
+                            <img style={imgStyle} src={SendToKodiScreen1}/>
                         </div>
-                        <div className="col-xs-12 col-md-12 col-lg-6 mt-4">
-                            <img style={imgStyle} src="./../../../public/images/SendToKodi/4.jpg"/>
+                        <div className="col-xs-12 col-md-12 col-lg-4 py-4">
+                            <img style={imgStyle} src={SendToKodiScreen2}/>
                         </div>
                     </div>
                     <div className="row mt-4">
                         <div className="col">
-                            <h3>Reviews</h3>
+                            <h5 className="py-3">
+                                <FormattedMessage id="SENDTOKODI_REVIEWS"/>
+                            </h5>
                             {this.state.reviews.map((review, ri) => (
                                 <div key={ri}>
                                     <div><b>{review.title}</b></div>
@@ -121,6 +125,8 @@ export default class SendToKodi extends Component {
                         </div>
                     </div>
                 </div>
+                <Contact/>
+                <Impressum/>
             </div>
         );
     }

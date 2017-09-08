@@ -13,7 +13,7 @@ class Impressum extends Component {
                 <div className="container py-3">
                     <p>© 2017 Teufel-IT</p>
                     <div className="row">
-                        <div className="col-xs-12 col-md-3 col-lg-3">
+                        <div className="col-xs-12 col-md-3 col-lg-3 py-3">
                             <div style={fontSizeMedium}>
                                 <FormattedMessage id="OWNER"/>
                             </div>
@@ -22,7 +22,7 @@ class Impressum extends Component {
                             <div>Werkstr.10a</div>
                             <div>D-77815 Bühl</div>
                         </div>
-                        <div className="col-xs-12 col-md-3 col-lg-3">
+                        <div className="col-xs-12 col-md-3 col-lg-3 py-3">
                             <div style={fontSizeMedium}>
                                 <FormattedMessage id="SOURCE_CODE"/>
                             </div>
@@ -35,7 +35,7 @@ class Impressum extends Component {
                                 </a>
                             </div>
                         </div>
-                        <div className="col-xs-12 col-md-3 col-lg-3">
+                        <div className="col-xs-12 col-md-3 col-lg-3 py-3">
                             <div style={fontSizeMedium}>
                             <FormattedMessage id="SOURCE_FOR_IMAGES"/>
                             </div>
@@ -53,7 +53,7 @@ class Impressum extends Component {
                                    rel="noopener noreferrer">www.fontawesome.io</a>
                             </div>
                         </div>
-                        <div className="col-xs-12 col-md-3 col-lg-3">
+                        <div className="col-xs-12 col-md-3 col-lg-3 py-3">
                             <div style={fontSizeMedium}>
                                 <FormattedMessage id="CONTACT_TITLE"/>
                             </div>

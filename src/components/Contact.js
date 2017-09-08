@@ -6,7 +6,7 @@ export default class Contact extends Component {
 
     render() {
         return (
-            <div className="row py-3">
+            <div className="row py-3 text-center">
                 <div className="col">
                     <span className="text-uppercase" style={{fontSize: '30px', letterSpacing: '10px'}}>
                         <SectionHeader title="CONTACT_TITLE"/>

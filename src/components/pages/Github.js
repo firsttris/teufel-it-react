@@ -4,6 +4,8 @@ import FullImage from './../FullImage';
 import Header from './../Header';
 import GithubItem from './../pages/GithubItem';
 import SectionHeaderWithSubRow from './../SectionHeaderWithSubRow';
+import Contact from './../Contact';
+import Impressum from './../Impressum';
 
 export default class Github extends Component {
 
@@ -18,7 +20,6 @@ export default class Github extends Component {
 
     componentWillMount() {
         fetch('https://api.github.com/users/firsttris/repos').then((data) => data.json().then((data) => {
-            console.log(data);
             const repos = data.filter((repository) => repository.fork === false);
             this.setState({repositories: repos, filteredRepositories: repos})
         }))
@@ -36,17 +37,13 @@ export default class Github extends Component {
     render() {
         return (
             <div className="container-fluid">
-                <div style={{
-                    textAlign: 'center'
-                }}>
+                <div style={{textAlign: 'center'}}>
                     <FullImage image={OldComputer} height="550px"/>
                     <Header/>
-
                 </div>
-
                 <div className="container">
-                    <SectionHeaderWithSubRow title="Projects"
-                                text="Open Source"/>
+                    <SectionHeaderWithSubRow title="NAVIGATION_PROJECTS"
+                                             text="GITHUB_SUBTITLE"/>
                     <div className="form-group pt-3">
                         <div className="input-group">
                             <input type="search" className="form-control" id="Search" placeholder="Search"
@@ -56,10 +53,11 @@ export default class Github extends Component {
                         </div>
                     </div>
                     <div className="list-group pb-3">
-                        {this.state.filteredRepositories.map((repository, index) => <GithubItem key={index}
-                                                                                                repo={repository}/>)}
+                        {this.state.filteredRepositories.map((repository, index) => <GithubItem key={index} repo={repository}/>)}
                     </div>
                 </div>
+                <Contact/>
+                <Impressum/>
             </div>
         );
     }

@@ -2,7 +2,8 @@ import React, {Component} from 'react';
 import Paper from './../../../public/images/backgrounds/paper.png';
 import LinkItem from './LinkItem';
 import './navigation.css';
-import {withRouter} from 'react-router';
+import {withRouter} from 'react-router-dom';
+import {injectIntl} from 'react-intl';
 
 class Navigation extends Component {
     constructor() {
@@ -14,7 +15,7 @@ class Navigation extends Component {
     }
 
     onClick() {
-        this.setState({currentPath: this.props.history.location.pathname});
+        this.setState({currentPath: this.props.history.location.pathname, hideNav: true});
     }
 
     componentWillMount() {
@@ -25,12 +26,16 @@ class Navigation extends Component {
         this.setState({hideNav: !this.state.hideNav});
     }
 
+    scrollToBottom() {
+        window.scrollTo(0,document.body.scrollHeight - 850);
+    }
+
     render() {
         const navItems = [
-            {path: '/', name: 'Entwicklung'},
-            {path: '/it-strategieberatung', name: 'Beratung'},
-            {path: '/softwareentwicklung', name: 'Projekte'},
-            {path: '/sendtokodi', name: 'SendToKodi'}
+            {path: '/', name: this.props.intl.messages['NAVIGATION_DEVELOPMENT']},
+            {path: '/it-strategieberatung', name: this.props.intl.messages['NAVIGATION_CONSULTING']},
+            {path: '/softwareentwicklung', name: this.props.intl.messages['NAVIGATION_PROJECTS']},
+            {path: '/sendtokodi', name: this.props.intl.messages['NAVIGATION_SENDTOKODI']}
         ];
         const navButtonStyle= {
             margin: '10px',
@@ -48,7 +53,7 @@ class Navigation extends Component {
                     borderBottom: '1px solid #f00'
                 }}>
                     <li className="nav-button">
-                        <a className="btn btn-outline-dark pull-left" style={navButtonStyle}>Contact</a>
+                        <a className="btn btn-outline-dark pull-left" style={navButtonStyle} onClick={() => this.scrollToBottom()}>Contact</a>
                         <a className="btn btn-outline-dark pull-right" style={navButtonStyle}>
                             <i className="fa fa-bars" aria-hidden="true" onClick={() => this.toggleNavigation()}/>
                         </a>
@@ -72,4 +77,4 @@ class Navigation extends Component {
     }
 }
 
-export default withRouter(Navigation);
+export default withRouter(injectIntl(Navigation));

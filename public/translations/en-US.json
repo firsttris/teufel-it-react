@@ -21,11 +21,10 @@
   "PRINCIPLES_SAVINGS_TEXT": "Less maintenance costs",
   "PRINCIPLES_STANDARDS_TITLE": "Standards",
   "PRINCIPLES_STANDARDS_TEXT": "Use of proven concepts",
-  "PRINCIPLES_EASY_TITLE": "Einfach & Fair",
+  "PRINCIPLES_EASY_TITLE": "Easy & Fair",
   "PRINCIPLES_EASY_TEXT": "Reduce the complexity of your IT systems",
   "PRINCIPLES_BUSINESS_TITLE": "Business",
   "PRINCIPLES_BUSINESS_TEXT": "Focus on your core business",
-
   "PORTFOLIO_SOFTWARE_TITLE": "Software",
   "PORTFOLIO_SOFTWARE_TEXT": "Development of native, web and cross-platform applications",
   "PORTFOLIO_MOBILE_TITLE": "Mobile",
@@ -36,8 +35,6 @@
   "PORTFOLIO_SERVICES_TEXT": "Integration and migration of business services",
   "PORTFOLIO_TRAINING_TITLE": "Training",
   "PORTFOLIO_TRAINING_TEXT": "We share our knowledge, new concepts and methods",
-
-
   "PRINCIPLES_TDD_TITLE": "tdd",
   "PRINCIPLES_TDD_TEXT": "We write tests first",
   "PRINCIPLES_PP_TITLE": "Pair Programming",
@@ -46,10 +43,19 @@
   "PRINCIPLES_CC_TEXT": "Principles and practices to achieve more quality",
   "PRINCIPLES_AGILE_TITLE": "agile",
   "PRINCIPLES_AIGLE_TEXT": "We solve complex challenges in iterations",
-
   "OWNER": "Owner",
   "SOURCE_FOR_IMAGES": "Sources for Media",
   "BUILD_WITH": "Created with React",
   "SOURCE_CODE": "Source Code",
-  "GITHUB_PAGE_LINK": "Deployed on Github "
+  "GITHUB_PAGE_LINK": "Deployed on Github ",
+  "GITHUB_SUBTITLE": "on Github",
+  "NAVIGATION_DEVELOPMENT": "Development",
+  "NAVIGATION_CONSULTING": "Consulting",
+  "NAVIGATION_PROJECTS": "Projects",
+  "NAVIGATION_SENDTOKODI": "SendToKodi",
+  "SENDTOKODI_DESCRIPTION_LABEL": "Description",
+  "SENDTOKODI_SCREENSHOTS_LABEL": "Screenshots",
+  "SENDTOKODI_REVIEWS": "Reviews",
+  "SENDTOKODI_SUPPORTED_ADDONS_LABEL": "Supported Addons",
+  "SENDTOKODI_DESCRIPTION": "With SendToKodi you can send links directly from various apps. You just have to open the share menu at the video or track and choose SendToKodi from the available apps. Then you can send the link to Kodi."
 }

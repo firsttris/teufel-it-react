@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
-import {
-    Link
-} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import './linkItem.css'
 
 export default class LinkItem extends Component {
