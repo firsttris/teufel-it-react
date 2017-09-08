@@ -29,8 +29,14 @@ class Navigation extends Component {
         const navItems = [
             {path: '/', name: 'Entwicklung'},
             {path: '/it-strategieberatung', name: 'Beratung'},
-            {path: '/softwareentwicklung', name: 'Software'}
+            {path: '/softwareentwicklung', name: 'Projekte'},
+            {path: '/sendtokodi', name: 'SendToKodi'}
         ];
+        const navButtonStyle= {
+            margin: '10px',
+            color: '#f00',
+            textDecoration: 'none'
+        };
         return (
             <div className="nav-bar">
                 <ul style={{
@@ -42,11 +48,8 @@ class Navigation extends Component {
                     borderBottom: '1px solid #f00'
                 }}>
                     <li className="nav-button">
-                        <a className="btn btn-outline-dark pull-right" style={{
-                            margin: '10px',
-                            color: '#f00',
-                            textDecoration: 'none'
-                        }}>
+                        <a className="btn btn-outline-dark pull-left" style={navButtonStyle}>Contact</a>
+                        <a className="btn btn-outline-dark pull-right" style={navButtonStyle}>
                             <i className="fa fa-bars" aria-hidden="true" onClick={() => this.toggleNavigation()}/>
                         </a>
                         <div className="clearfix"/>

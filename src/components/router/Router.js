@@ -10,6 +10,7 @@ import Development from './../pages/Development';
 import Consulting from './../pages/Consulting';
 import NotFound from './../error/NotFound';
 import Github from './../pages/Github'
+import SendToKodi from './../pages/SendToKodi'
 import Navigation from './Navigation';
 
 
@@ -27,6 +28,7 @@ export default class Router extends Component {
                                         <Route exact path="/" component={Development}/>
                                         <Route path="/it-strategieberatung" component={Consulting}/>
                                         <Route path="/softwareentwicklung" component={Github}/>
+                                        <Route path="/sendtokodi" component={SendToKodi}/>
                                         <Route component={NotFound}/>
                                     </Switch>
                             </CSSTransition>
