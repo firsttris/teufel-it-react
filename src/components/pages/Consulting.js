@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Parallax from './../Parallax';
+import Parallax from './Parallax';
 import Meeting from './../../../public/images/meeting2.jpg';
 import Server from './../../../public/images/server2.jpg';
 import ConsultingJson from './../../../public/pages/consulting.json';

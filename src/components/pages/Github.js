@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
-import OldComputer from './../../../public/images/oldComputer2.jpg';
+import OldComputer from './../../../public/images/code.jpg';
 import FullImage from './../FullImage';
+import Header from './../Header';
 import GithubItem from './../pages/GithubItem';
+import SectionHeaderWithSubRow from './../SectionHeaderWithSubRow';
 
 export default class Github extends Component {
 
@@ -23,7 +25,7 @@ export default class Github extends Component {
     }
 
     search(event) {
-        const repos = this.state.repositories.filter((repository) => repository.name.includes(event.target.value));
+        const repos = this.state.repositories.filter((repository) => repository.name.toLowerCase().includes(event.target.value.toLowerCase()));
         this.setState({filteredRepositories: repos, searchInput: event.target.value})
     }
 
@@ -33,17 +35,29 @@ export default class Github extends Component {
 
     render() {
         return (
-            <div>
-                <FullImage image={OldComputer} height="150px"/>
+            <div className="container-fluid">
+                <div style={{
+                    textAlign: 'center'
+                }}>
+                    <FullImage image={OldComputer} height="550px"/>
+                    <Header/>
+
+                </div>
+
                 <div className="container">
+                    <SectionHeaderWithSubRow title="Projects"
+                                text="Open Source"/>
                     <div className="form-group pt-3">
                         <div className="input-group">
-                        <input type="search" className="form-control" id="Search" placeholder="Search" value={this.state.searchInput} onChange={(value) => this.search(value)}/>
-                        <span className="input-group-addon" onClick={this.reset.bind(this)}><i className="fa fa-trash-o" aria-hidden="true" /></span>
+                            <input type="search" className="form-control" id="Search" placeholder="Search"
+                                   value={this.state.searchInput} onChange={(value) => this.search(value)}/>
+                            <span className="input-group-addon" onClick={this.reset.bind(this)}><i
+                                className="fa fa-trash-o" aria-hidden="true"/></span>
                         </div>
                     </div>
-                    <div className="list-group">
-                        {this.state.filteredRepositories.map((repository, index) => <GithubItem key={index} repo={repository}/>)}
+                    <div className="list-group pb-3">
+                        {this.state.filteredRepositories.map((repository, index) => <GithubItem key={index}
+                                                                                                repo={repository}/>)}
                     </div>
                 </div>
             </div>

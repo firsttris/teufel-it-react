@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
-import Lines from './../../public/images/backgrounds/lines.png';
-import Header from './Header';
-import FullImage from './FullImage';
-import Contact from './Contact';
-import Impressum from './Impressum';
-import Principle from './Principle';
-import Portfolio from './Portfolio';
+import Lines from './../../../public/images/backgrounds/lines.png';
+import Header from './../Header';
+import FullImage from './../FullImage';
+import Contact from './../Contact';
+import Impressum from './../Impressum';
+import Principle from './../Principle';
+import Portfolio from './../Portfolio';
 
 export default class Parallax extends Component {
     render() {

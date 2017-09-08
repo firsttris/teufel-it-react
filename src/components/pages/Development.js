@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Parallax from './../Parallax';
+import Parallax from './Parallax';
 import OldComputer from './../../../public/images/oldComputer2.jpg';
 import MuchCode from './../../../public/images/much_code.jpg';
 import DevelopmentJson from './../../../public/pages/development.json';

@@ -2,7 +2,7 @@
   "HEADER_TITLE": "[ teufel it ]",
   "HEADER_SUBTITLE": "Software is our craft",
   "CONTACT_TITLE": "Contact",
-  "CONTACT_TEXT": "Contact me",
+  "CONTACT_TEXT": "Contact us",
   "ERROR_TEXT": "Looks like something went wrong!",
   "ERROR_NOT_FOUND": "Page not found, try refreshing",
   "ERROR_CONTACT_US": "If the problem persists feel free to contact us",
@@ -48,6 +48,8 @@
   "PRINCIPLES_AIGLE_TEXT": "We solve complex challenges in iterations",
 
   "OWNER": "Owner",
-  "SOURCE_FOR_IMAGES": "Sources for Images and Icons",
-  "BUILD_WITH": "Build with "
+  "SOURCE_FOR_IMAGES": "Sources for Media",
+  "BUILD_WITH": "Created with React",
+  "SOURCE_CODE": "Source Code",
+  "GITHUB_PAGE_LINK": "Deployed on Github "
 }

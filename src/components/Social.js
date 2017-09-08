@@ -8,8 +8,10 @@ export default class Social extends Component {
             textDecoration: 'none'
         };
         return (
-            <a style={linkStyle} className={"fa fa-2x " + this.props.icon} aria-hidden="true" target="_blank"
-               rel="noopener noreferrer" href={this.props.url}> </a>
+            <a className="btn btn-outline-dark" style={linkStyle} target="_blank" rel="noopener noreferrer"
+               href={this.props.url}>
+                <i className={"fa fa-2x " + this.props.icon} aria-hidden="true"/>
+            </a>
         );
     }
 }
