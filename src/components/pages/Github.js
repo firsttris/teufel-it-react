@@ -18,6 +18,12 @@ class Github extends Component {
         };
     }
 
+    onEnter(e) {
+        if (e.key === 'Enter') {
+            document.activeElement.blur();
+        }
+    }
+
     componentWillMount() {
         fetch('https://api.github.com/users/firsttris/repos').then((data) => data.json().then((data) => {
             const repos = data.filter((repository) => repository.fork === false);
@@ -47,7 +53,7 @@ class Github extends Component {
                     <div className="form-group pt-3">
                         <div className="input-group">
                             <input type="search" className="form-control" id="Search" placeholder="Search"
-                                   value={this.state.searchInput} onChange={(value) => this.search(value)}/>
+                                   value={this.state.searchInput} onChange={(value) => this.search(value)} onKeyPress={(e) => this.onEnter(e)}/>
                             <span className="input-group-addon" onClick={this.reset.bind(this)}><i
                                 className="fa fa-trash-o" aria-hidden="true"/></span>
                         </div>

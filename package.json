@@ -13,7 +13,7 @@
   "scripts": {
     "test": "jest",
     "test:watch": "jest --coverage --watchAll",
-    "start": "webpack-dev-server --port 8080 --hot --env.config=dev --colors",
+    "start": "webpack-dev-server --port 8080 --hot --host 0.0.0.0 --env.config=dev --colors",
     "build": "webpack --env.config=prod --colors",
     "lint": "eslint src",
     "lint:fix": "eslint --fix src",
