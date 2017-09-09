@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
-import './fullImage.css'
+import './fullImage.css';
+import PropTypes from 'prop-types';
 
-export default class FullImage extends Component {
+class FullImage extends Component {
     render() {
         let imageStyle = {
             position: 'relative',
@@ -25,3 +26,10 @@ export default class FullImage extends Component {
         );
     }
 }
+
+FullImage.propTypes = {
+    image: PropTypes.string,
+    height: PropTypes.string
+};
+
+export default FullImage;

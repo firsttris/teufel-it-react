@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import Emojify from 'react-emojione';
+import PropTypes from 'prop-types';
 
-export default class GithubItem extends Component {
+class GithubItem extends Component {
     render() {
         return (
             <div>
@@ -21,3 +22,9 @@ export default class GithubItem extends Component {
         );
     }
 }
+
+GithubItem.propTypes = {
+    repo: PropTypes.object
+};
+
+export default GithubItem;

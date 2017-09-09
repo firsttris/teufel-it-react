@@ -3,9 +3,9 @@ import Parallax from './Parallax';
 import OldComputer from './../../../public/images/oldComputer2.jpg';
 import MuchCode from './../../../public/images/much_code.jpg';
 import DevelopmentJson from './../../../public/pages/development.json';
-import {Helmet} from "react-helmet";
+import {Helmet} from 'react-helmet';
 
-export default class Development extends Component {
+class Development extends Component {
     render() {
         return (
             <div>
@@ -20,3 +20,5 @@ export default class Development extends Component {
         );
     }
 }
+
+export default Development;

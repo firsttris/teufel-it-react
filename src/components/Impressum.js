@@ -3,7 +3,7 @@ import {FormattedMessage} from 'react-intl';
 import Paper from './../../public/images/backgrounds/paper.png';
 
 const blackBackgroundStyle = {backgroundImage: `url(${Paper})`, color: 'white', textAlign: 'left', fontSize: 'small'};
-const textStyle = { color: 'white'};
+const textStyle = {color: 'white'};
 const fontSizeMedium = {fontSize: 'medium'};
 
 class Impressum extends Component {
@@ -29,7 +29,8 @@ class Impressum extends Component {
                             <br/>
                             <div>
                                 <a style={textStyle}
-                                   href="https://github.com/firsttris/teufel-it-react" target="_blank">
+                                   href="https://github.com/firsttris/teufel-it-react" rel="noopener noreferrer"
+                                   target="_blank">
                                     <FormattedMessage id="GITHUB_PAGE_LINK"/><i className="fa fa-github"
                                                                                 aria-hidden="true"/>
                                 </a>
@@ -37,7 +38,7 @@ class Impressum extends Component {
                         </div>
                         <div className="col-xs-12 col-md-3 col-lg-3 py-3">
                             <div style={fontSizeMedium}>
-                            <FormattedMessage id="SOURCE_FOR_IMAGES"/>
+                                <FormattedMessage id="SOURCE_FOR_IMAGES"/>
                             </div>
                             <br/>
                             <div>

@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
 import {FormattedMessage} from 'react-intl';
-import SectionHeader from './SectionHeader'
+import SectionHeader from './SectionHeader';
+import PropTypes from 'prop-types';
 
-export default class SectionHeaderWithSubRow extends Component {
+class SectionHeaderWithSubRow extends Component {
     render() {
         return (
             <div className="row py-3" style={this.props.style}>
@@ -14,3 +15,11 @@ export default class SectionHeaderWithSubRow extends Component {
         );
     }
 }
+
+SectionHeaderWithSubRow.propTypes = {
+    style: PropTypes.object,
+    title: PropTypes.string,
+    text: PropTypes.string
+};
+
+export default SectionHeaderWithSubRow;

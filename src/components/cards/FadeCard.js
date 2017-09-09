@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import {FormattedMessage} from 'react-intl';
+import PropTypes from 'prop-types';
 
-export default class FilpCard extends Component {
+class FilpCard extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -34,7 +35,7 @@ export default class FilpCard extends Component {
                  onMouseEnter={this.onMouseEnter.bind(this)}
                  onClick={this.onClick.bind(this)}>
                 <div style={verticalCenterStyle}>
-                    <i className={"fa fa-2x " + this.props.icon} style={colorTransitionStyle} aria-hidden="true"/>
+                    <i className={'fa fa-2x ' + this.props.icon} style={colorTransitionStyle} aria-hidden="true"/>
                     <span className="text-uppercase" style={{marginLeft: '10px', fontSize: '20px'}}>
                         <FormattedMessage id={this.props.title}/>
                     </span>
@@ -46,3 +47,11 @@ export default class FilpCard extends Component {
         );
     }
 }
+
+FilpCard.propTypes = {
+    icon: PropTypes.string,
+    title: PropTypes.string,
+    text: PropTypes.string
+};
+
+export default FilpCard;

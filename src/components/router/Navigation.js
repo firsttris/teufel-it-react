@@ -4,6 +4,7 @@ import LinkItem from './LinkItem';
 import './navigation.css';
 import {withRouter} from 'react-router-dom';
 import {injectIntl} from 'react-intl';
+import PropTypes from 'prop-types';
 
 class Navigation extends Component {
     constructor() {
@@ -59,7 +60,7 @@ class Navigation extends Component {
                         </a>
                         <div className="clearfix"/>
                     </li>
-                    <div className={this.state.hideNav ? "navigation" : ''}>
+                    <div className={this.state.hideNav ? 'navigation' : ''}>
                         {
                             navItems.map((item, index) => {
                                 return (
@@ -67,7 +68,7 @@ class Navigation extends Component {
                                         <LinkItem focus={this.state.currentPath === item.path} path={item.path}
                                                   name={item.name}/>
                                     </div>
-                                )
+                                );
                             })
                         }
                     </div>
@@ -76,5 +77,10 @@ class Navigation extends Component {
         );
     }
 }
+
+Navigation.propTypes = {
+    history: PropTypes.object,
+    intl: PropTypes.object
+};
 
 export default withRouter(injectIntl(Navigation));

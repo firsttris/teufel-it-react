@@ -7,7 +7,7 @@ import Contact from './../Contact';
 import Impressum from './../Impressum';
 import {FormattedMessage} from 'react-intl';
 
-export default class SendToKodi extends Component {
+class SendToKodi extends Component {
 
     constructor() {
         super();
@@ -19,13 +19,13 @@ export default class SendToKodi extends Component {
                 image: '',
                 link: ''
             }
-        }
+        };
     }
 
     componentWillMount() {
-        const countries = ['de', 'us', 'gb', 'nl', 'ro', 'fr']
+        const countries = ['de', 'us', 'gb', 'nl', 'ro', 'fr'];
         for (const index in countries) {
-            this.requestReview(countries[index])
+            this.requestReview(countries[index]);
         }
     }
 
@@ -56,8 +56,8 @@ export default class SendToKodi extends Component {
                 }
             }))
             .catch((error) => {
-                console.log(error)
-            })
+            console.error(error) // eslint-disable-line
+            });
     }
 
     render() {
@@ -131,3 +131,5 @@ export default class SendToKodi extends Component {
         );
     }
 }
+
+export default SendToKodi;

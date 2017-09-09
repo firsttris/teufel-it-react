@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {FormattedMessage} from 'react-intl';
+import PropTypes from 'prop-types';
 
 const cardStyle = {
     position: 'absolute',
@@ -19,7 +20,7 @@ const borderStyle = {
 const objectPerspectiveStyle = {perspective: '800px', 'height': '250px'};
 const iconFontStyle = {fontSize: '10em', color: '#f00'};
 
-export default class FilpCard extends Component {
+class FlipCard extends Component {
     constructor() {
         super();
         this.state = {
@@ -55,7 +56,7 @@ export default class FilpCard extends Component {
                  onClick={this.onClick.bind(this)}>
                 <div style={flipStyle}>
                     <div style={cardStyle}>
-                        <i className={"fa fa-5x " + this.props.icon} aria-hidden="true" style={iconFontStyle}/>
+                        <i className={'fa fa-5x ' + this.props.icon} aria-hidden="true" style={iconFontStyle}/>
                         <div className="text-uppercase" style={{fontSize: '1.5em'}}>
                             <FormattedMessage id={this.props.title}/>
                         </div>
@@ -70,3 +71,12 @@ export default class FilpCard extends Component {
         );
     }
 }
+
+FlipCard.propTypes = {
+    class: PropTypes.string,
+    icon: PropTypes.string,
+    title: PropTypes.string,
+    text: PropTypes.string
+};
+
+export default FlipCard;

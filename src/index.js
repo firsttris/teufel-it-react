@@ -2,7 +2,6 @@ import 'babel-polyfill';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Router from './components/router/Router';
-import registerServiceWorker from './registerServiceWorker';
 import {addLocaleData, IntlProvider} from 'react-intl';
 import en from 'react-intl/locale-data/en';
 import de from 'react-intl/locale-data/de';
@@ -20,4 +19,3 @@ ReactDOM.render(
         messages={navigator.language.includes('de') ? deDE : enUS}>
         <Router/>
     </IntlProvider>, document.getElementById('root'));
-registerServiceWorker();

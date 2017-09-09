@@ -3,9 +3,9 @@ import Parallax from './Parallax';
 import Meeting from './../../../public/images/meeting2.jpg';
 import Server from './../../../public/images/server2.jpg';
 import ConsultingJson from './../../../public/pages/consulting.json';
-import {Helmet} from "react-helmet";
+import {Helmet} from 'react-helmet';
 
-export default class Consulting extends Component {
+class Consulting extends Component {
     render() {
         return (
             <div>
@@ -20,3 +20,5 @@ export default class Consulting extends Component {
         );
     }
 }
+
+export default Consulting;

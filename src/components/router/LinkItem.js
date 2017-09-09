@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-import './linkItem.css'
+import './linkItem.css';
+import PropTypes from 'prop-types';
 
-export default class LinkItem extends Component {
+class LinkItem extends Component {
     constructor() {
         super();
         this.state = {
@@ -43,3 +44,11 @@ export default class LinkItem extends Component {
         );
     }
 }
+
+LinkItem.propTypes = {
+    focus: PropTypes.bool,
+    path: PropTypes.string,
+    name: PropTypes.string,
+};
+
+export default LinkItem;

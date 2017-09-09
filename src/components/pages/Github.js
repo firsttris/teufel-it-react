@@ -7,7 +7,7 @@ import SectionHeaderWithSubRow from './../SectionHeaderWithSubRow';
 import Contact from './../Contact';
 import Impressum from './../Impressum';
 
-export default class Github extends Component {
+class Github extends Component {
 
     constructor() {
         super();
@@ -15,23 +15,23 @@ export default class Github extends Component {
             searchInput: '',
             filteredRepositories: [],
             repositories: [],
-        }
+        };
     }
 
     componentWillMount() {
         fetch('https://api.github.com/users/firsttris/repos').then((data) => data.json().then((data) => {
             const repos = data.filter((repository) => repository.fork === false);
-            this.setState({repositories: repos, filteredRepositories: repos})
-        }))
+            this.setState({repositories: repos, filteredRepositories: repos});
+        }));
     }
 
     search(event) {
         const repos = this.state.repositories.filter((repository) => repository.name.toLowerCase().includes(event.target.value.toLowerCase()));
-        this.setState({filteredRepositories: repos, searchInput: event.target.value})
+        this.setState({filteredRepositories: repos, searchInput: event.target.value});
     }
 
     reset() {
-        this.setState({searchInput: '', filteredRepositories: this.state.repositories})
+        this.setState({searchInput: '', filteredRepositories: this.state.repositories});
     }
 
     render() {
@@ -62,3 +62,5 @@ export default class Github extends Component {
         );
     }
 }
+
+export default Github;

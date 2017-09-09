@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import {FormattedMessage} from 'react-intl';
+import PropTypes from 'prop-types';
 
-export default class SectionHeader extends Component {
+class SectionHeader extends Component {
     render() {
         return (
             <div className="text-uppercase" style={{fontSize: '30px', letterSpacing: '10px'}}>
@@ -10,3 +11,9 @@ export default class SectionHeader extends Component {
         );
     }
 }
+
+SectionHeader.propTypes = {
+    title: PropTypes.string
+};
+
+export default SectionHeader;

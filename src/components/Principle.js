@@ -2,10 +2,11 @@ import React, {Component} from 'react';
 import FadeCards from './cards/FadeCards';
 import SectionHeaderWithSubRow from './SectionHeaderWithSubRow';
 import Paper from './../../public/images/backgrounds/paper.png';
+import PropTypes from 'prop-types';
 
 const blackBackgroundStyle = {backgroundImage: `url(${Paper})`, color: 'white'};
 
-export default class Principle extends Component {
+class Principle extends Component {
     render() {
         return (
             <div className="row">
@@ -18,3 +19,9 @@ export default class Principle extends Component {
         );
     }
 }
+
+Principle.propTypes = {
+    json: PropTypes.object
+};
+
+export default Principle;

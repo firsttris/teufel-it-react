@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
 import FlipCards from './cards/FlipCards';
 import SectionHeaderWithSubRow from './SectionHeaderWithSubRow';
+import PropTypes from 'prop-types';
 
-export default class Portfolio extends Component {
+class Portfolio extends Component {
     render() {
         return (
             <div className="row">
@@ -15,3 +16,9 @@ export default class Portfolio extends Component {
         );
     }
 }
+
+Portfolio.propTypes = {
+    json: PropTypes.object
+};
+
+export default Portfolio;

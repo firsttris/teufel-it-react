@@ -6,8 +6,9 @@ import Contact from './../Contact';
 import Impressum from './../Impressum';
 import Principle from './../Principle';
 import Portfolio from './../Portfolio';
+import PropTypes from 'prop-types';
 
-export default class Parallax extends Component {
+class Parallax extends Component {
     render() {
         const { portfolio, principles } = this.props.json;
         return (
@@ -28,3 +29,11 @@ export default class Parallax extends Component {
     }
 }
 
+Parallax.propTypes = {
+    json: PropTypes.object,
+    image1: PropTypes.string,
+    image2: PropTypes.string,
+    image3: PropTypes.string
+};
+
+export default Parallax;

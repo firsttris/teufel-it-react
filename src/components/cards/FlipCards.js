@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import FlipCard from './FlipCard';
+import PropTypes from 'prop-types';
 
-export default class FlipCards extends Component {
+class FlipCards extends Component {
   render() {
     return (
         <div className="row py-3">
@@ -15,3 +16,9 @@ export default class FlipCards extends Component {
     );
   }
 }
+
+FlipCards.propTypes = {
+    cards: PropTypes.array
+};
+
+export default FlipCards;

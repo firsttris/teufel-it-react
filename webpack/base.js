@@ -18,6 +18,15 @@ module.exports = {
                 exclude: /node_modules/
             },
             {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                loader: 'eslint-loader',
+                options: {
+                    emitError: false,
+                    emitWarning: true
+                }
+            },
+            {
                 test: /\.(jpe?g|png|gif)$/,
                 use: [{loader: 'file-loader?name=img/[name]__[hash:base64:5].[ext]'}]
             },
