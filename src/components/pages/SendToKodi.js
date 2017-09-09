@@ -56,7 +56,7 @@ class SendToKodi extends Component {
                 }
             }))
             .catch((error) => {
-            console.error(error) // eslint-disable-line
+                console.error(error) // eslint-disable-line
             });
     }
 
@@ -83,7 +83,8 @@ class SendToKodi extends Component {
                                 </div>
                             </div>
 
-                            <a href={this.state.app.link} className="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                            <a href={this.state.app.link} className="btn btn-primary" target="_blank"
+                               rel="noopener noreferrer">
                                 <i className="fa fa-apple" aria-hidden="true"/> Appstore Link</a>
                         </div>
                     </div>
@@ -117,7 +118,8 @@ class SendToKodi extends Component {
                                 <div key={ri}>
                                     <div><b>{review.title}</b></div>
                                     <span><i>{review.name} </i></span>
-                                    {[...Array(5)].map((x, xi) => <i className="fa fa-star" style={{color: 'gold'}} key={xi}
+                                    {[...Array(5)].map((x, xi) => <i className="fa fa-star" style={{color: 'gold'}}
+                                                                     key={xi}
                                                                      aria-hidden="true"/>)}
                                     <p>{review.text}</p>
                                 </div>))

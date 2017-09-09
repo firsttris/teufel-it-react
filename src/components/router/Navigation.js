@@ -28,7 +28,7 @@ class Navigation extends Component {
     }
 
     scrollToBottom() {
-        window.scrollTo(0,document.body.scrollHeight - 850);
+        window.scrollTo(0, document.body.scrollHeight - 850);
     }
 
     render() {
@@ -38,7 +38,7 @@ class Navigation extends Component {
             {path: '/softwareentwicklung', name: this.props.intl.messages['NAVIGATION_PROJECTS']},
             {path: '/sendtokodi', name: this.props.intl.messages['NAVIGATION_SENDTOKODI']}
         ];
-        const navButtonStyle= {
+        const navButtonStyle = {
             margin: '10px',
             color: '#f00',
             textDecoration: 'none'
@@ -54,7 +54,8 @@ class Navigation extends Component {
                     borderBottom: '1px solid #f00'
                 }}>
                     <li className="nav-button">
-                        <a className="btn btn-outline-dark pull-left" style={navButtonStyle} onClick={() => this.scrollToBottom()}>Contact</a>
+                        <a className="btn btn-outline-dark pull-left" style={navButtonStyle}
+                           onClick={() => this.scrollToBottom()}>Contact</a>
                         <a className="btn btn-outline-dark pull-right" style={navButtonStyle}>
                             <i className="fa fa-bars" aria-hidden="true" onClick={() => this.toggleNavigation()}/>
                         </a>

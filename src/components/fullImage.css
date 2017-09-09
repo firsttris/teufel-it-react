@@ -1,6 +1,6 @@
 @media (max-width: 575px) {
     .full-image {
-        background-attachment: scroll!important;
+        background-attachment: scroll !important;
     }
 }
 

@@ -8,9 +8,9 @@ class Portfolio extends Component {
         return (
             <div className="row">
                 <div className="col">
-                <SectionHeaderWithSubRow title={this.props.json.title}
-                            text={this.props.json.text}/>
-                <FlipCards cards={this.props.json.cards}/>
+                    <SectionHeaderWithSubRow title={this.props.json.title}
+                                             text={this.props.json.text}/>
+                    <FlipCards cards={this.props.json.cards}/>
                 </div>
             </div>
         );

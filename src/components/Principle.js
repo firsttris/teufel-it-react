@@ -12,7 +12,7 @@ class Principle extends Component {
             <div className="row">
                 <div className="col">
                     <SectionHeaderWithSubRow title={this.props.json.title} text={this.props.json.text}
-                                style={blackBackgroundStyle}/>
+                                             style={blackBackgroundStyle}/>
                     <FadeCards cards={this.props.json.cards} style={blackBackgroundStyle}/>
                 </div>
             </div>

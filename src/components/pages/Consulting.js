@@ -11,9 +11,10 @@ class Consulting extends Component {
             <div>
                 <Helmet>
                     <title>Teufel IT, IT-Strategieberatung, Geschäftsanwendungen, Geschäftsprozesse</title>
-                    <meta charSet="utf-8" />
-                    <meta name="description" content="Teufel IT, Softwareentwicklung, Integration, IT-Beratung, IT-Strategieberatung, Geschäftsanwendungen, Geschäftsprozesse" />
-                    <link rel="canonical" href="http://teufel-it.de/it-strategieberatung" />
+                    <meta charSet="utf-8"/>
+                    <meta name="description"
+                          content="Teufel IT, Softwareentwicklung, Integration, IT-Beratung, IT-Strategieberatung, Geschäftsanwendungen, Geschäftsprozesse"/>
+                    <link rel="canonical" href="http://teufel-it.de/it-strategieberatung"/>
                 </Helmet>
                 <Parallax image1={Meeting} image2={Server} image3={Meeting} json={ConsultingJson}/>
             </div>

@@ -1,11 +1,7 @@
 import React, {Component} from 'react';
 import './fade.css';
-import {
-    HashRouter,
-    Route,
-    Switch
-} from 'react-router-dom';
-import {TransitionGroup, CSSTransition} from 'react-transition-group';
+import {HashRouter, Route, Switch} from 'react-router-dom';
+import {CSSTransition, TransitionGroup} from 'react-transition-group';
 import Development from './../pages/Development';
 import Consulting from './../pages/Consulting';
 import NotFound from './../error/NotFound';

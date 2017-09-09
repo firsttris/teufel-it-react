@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
-import {
-    Link
-} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import Unicorn from './../../../public/images/NotFound/unicorn-small.png';
 import Lines from './../../../public/images/backgrounds/lines.png';
 import {FormattedMessage} from 'react-intl';

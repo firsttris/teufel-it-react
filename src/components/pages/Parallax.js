@@ -10,7 +10,7 @@ import PropTypes from 'prop-types';
 
 class Parallax extends Component {
     render() {
-        const { portfolio, principles } = this.props.json;
+        const {portfolio, principles} = this.props.json;
         return (
             <div className="container-fluid" style={{
                 textAlign: 'center',
