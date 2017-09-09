@@ -30,7 +30,7 @@ base.plugins.push(
             if (module.resource && (/^.*\.(css|scss)$/).test(module.resource)) {
                 return false;
             }
-            return module.context && module.context.indexOf("node_modules") !== -1;
+            return module.context && module.context.indexOf('node_modules') !== -1;
         }
     }),
     new webpack.DefinePlugin({
