@@ -1,7 +1,7 @@
 # teufel-it-react
 ### react version of teufel-it.de
 
-#### Scripts
+### Scripts
 ```bash
 npm run / yarn
 start ----------------- run web-ui, with hot-reload
@@ -11,16 +11,16 @@ build ----------------- build
 deploy ---------------- deploy to github pages
 ```
 
-#### Notes on using custom Domain with Github Pages
+### Notes on using custom domain with Github Pages
 
-#### Set up domain host
+#### Set up domain host to point to github
 
 - An A record @ 192.30.252.153
 - An A record @ 192.30.252.154
 - A CNAME aliasing www.domain.com to username.github.io. (note the trailing period)
 - The "CNAME" file in the GitHub Pages repo contains the text "domain.com"
 
-#### Set up SSL on Github Pages with custom domain
+#### Set up SSL using cloudflare reverse proxy
 
 - Register Domain on Cloudflare
 - Set nameserver of your Domain hoster to Cloudflare 
