@@ -1,5 +1,5 @@
-const base = require('./base');
-const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
+const base = require('./base'),
+  FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 
 base.module.rules.push({
   test: /\.css$/,
