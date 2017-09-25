@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Lines from 'images/backgrounds/lines.png';
 import OldComputer from 'images/code.jpg';
 import FullImage from 'components/FullImage.jsx';
 import Header from 'components/Header.jsx';
@@ -45,7 +46,7 @@ class Github extends Component {
 
   render() {
     return (
-      <div className="container-fluid">
+      <div className="container-fluid" style={{ backgroundImage: `url(${Lines})` }}>
         <div style={{ textAlign: 'center' }}>
           <FullImage image={OldComputer} height="550px" />
           <Header />

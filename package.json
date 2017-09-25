@@ -76,6 +76,7 @@
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "./jest/fileTransformer.js",
       "^.+\\.jsx?$": "babel-jest"
     },
+    "moduleDirectories": ["node_modules", "public", "src"],
     "moduleNameMapper": {
       "\\.(css|less)$": "identity-obj-proxy"
     }
