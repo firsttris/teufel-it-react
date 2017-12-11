@@ -7,7 +7,8 @@ import SendToKodiScreen3 from 'images/SendToKodi/3.jpg';
 import SendToKodiScreen4 from 'images/SendToKodi/4.jpg';
 import Contact from 'components/Contact.jsx';
 import Impressum from 'components/Impressum.jsx';
-import { FormattedMessage } from 'react-intl';
+import { FormattedMessage, injectIntl } from 'react-intl';
+import PropTypes from 'prop-types';
 
 class SendToKodi extends Component {
   constructor() {
@@ -102,7 +103,11 @@ class SendToKodi extends Component {
           <div className="row">
             <div className="col">
               <a
-                href={this.state.app.link}
+                href={
+                  'https://itunes.apple.com/' +
+                  this.props.intl.locale +
+                  '/app/sendtokodi/id1113517603'
+                }
                 className="btn btn-primary mt-1"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -192,4 +197,8 @@ class SendToKodi extends Component {
   }
 }
 
-export default SendToKodi;
+SendToKodi.propTypes = {
+  intl: PropTypes.any
+};
+
+export default injectIntl(SendToKodi);

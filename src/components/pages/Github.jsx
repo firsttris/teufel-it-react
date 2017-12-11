@@ -28,6 +28,7 @@ class Github extends Component {
     fetch('https://api.github.com/users/firsttris/repos').then(data =>
       data.json().then(data => {
         const repos = data.filter(repository => repository.fork === false);
+        repos.sort((a, b) => b['stargazers_count'] - a['stargazers_count']);
         this.setState({ repositories: repos, filteredRepositories: repos });
       })
     );
