@@ -34,7 +34,12 @@ base.plugins.push(
   new webpack.DefinePlugin({
     'process.env.NODE_ENV': JSON.stringify('production')
   }),
-  new minify(),
+  new minify(
+    {},
+    {
+      sourceMap: null
+    }
+  ),
   new ExtractTextPlugin('styles.css')
 );
 base.devtool = 'source-map';
