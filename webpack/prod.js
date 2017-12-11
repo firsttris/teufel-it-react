@@ -4,13 +4,21 @@ const base = require('./base'),
   webpack = require('webpack'),
   minify = require('babel-minify-webpack-plugin'),
   ExtractTextPlugin = require('extract-text-webpack-plugin'),
-  distPath = path.resolve(__dirname, '../dist');
+  distPath = path.resolve(__dirname, '../dist'),
+  fsExtra = require('fs-extra');
 
+// Create CNAME
 fs.writeFile(path.join(distPath, 'CNAME'), 'www.teufel-it.de', err => {
   if (err) {
     throw err;
   }
 });
+
+// Copy sidemap.txt
+fsExtra.copySync(
+  path.join(__dirname, '../public/sitemap.txt'),
+  path.join(__dirname, '../dist/sitemap.txt')
+);
 
 base.module.rules.push({
   test: /\.css$/,
